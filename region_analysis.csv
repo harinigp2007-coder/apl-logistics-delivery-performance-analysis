@@ -1,0 +1,24 @@
+Order Region,Total_Shipments,Average_Delay,Late_Risk_Count,Late_Risk_Percentage
+Central Asia,478,0.69,293,61.3
+Central Africa,1537,0.64,948,61.68
+US Center ,5335,0.61,3127,58.61
+Western Europe,24456,0.6,14432,59.01
+South Asia,7088,0.6,4162,58.72
+East Africa,1686,0.6,995,59.02
+Eastern Europe,3609,0.6,2118,58.69
+South of  USA ,3638,0.6,2156,59.26
+East of USA,6220,0.59,3649,58.67
+West Asia,5468,0.58,3194,58.41
+Oceania,9122,0.57,5219,57.21
+Eastern Asia,6582,0.57,3762,57.16
+South America,13441,0.56,7713,57.38
+North Africa,2901,0.56,1654,57.01
+Southeast Asia,8712,0.56,5113,58.69
+West Africa,3359,0.56,1874,55.79
+Central America,25817,0.56,14867,57.59
+West of USA ,7184,0.56,4108,57.18
+Northern Europe,8906,0.55,5086,57.11
+Caribbean,7523,0.54,4191,55.71
+Southern Europe,8495,0.51,4826,56.81
+Southern Africa,1037,0.47,575,55.45
+Canada,878,0.38,461,52.51

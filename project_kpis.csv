@@ -1,0 +1,9 @@
+KPI,Value
+Total Eligible Shipments,163472.0
+Delayed Shipments,94523.0
+Early Shipments,41592.0
+On-time Shipments,27357.0
+On-Time Delivery Rate (%),42.18
+Average Delivery Delay (Days),0.57
+Late Delivery Risk Ratio (%),57.82
+Delayed Shipment Percentage (%),57.82

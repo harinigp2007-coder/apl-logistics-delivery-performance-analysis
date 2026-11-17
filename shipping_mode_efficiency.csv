@@ -1,0 +1,4 @@
+Shipping Mode,Total_Shipments,Average_Delay,Delayed_Count,Delayed_Percentage
+First Class,26513,1.0,26513,100.0
+Second Class,33806,1.99,26987,79.83
+Standard Class,103153,-0.01,41023,39.77

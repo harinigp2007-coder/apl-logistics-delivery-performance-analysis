@@ -1,0 +1,4 @@
+Customer Segment,Total_Shipments,Average_Delay,Delayed_Shipments,On_Time_Shipments,Late_Risk_Count,Delay_Percentage,Late_Risk_Percentage
+Consumer,84497,0.57,48855,35642,48855,57.82,57.82
+Corporate,49704,0.56,28608,21096,28608,57.56,57.56
+Home Office,29271,0.59,17060,12211,17060,58.28,58.28
