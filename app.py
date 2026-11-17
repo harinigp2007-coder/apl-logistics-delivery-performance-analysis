@@ -29,7 +29,13 @@ st.set_page_config(
 # CONSTANTS
 # ======================================================================
 PROJECT_DIR = Path(__file__).resolve().parent.parent
-DATA_PATH = PROJECT_DIR / "outputs" / "cleaned_data" / "delivery_analysis_cleaned.csv"
+DATA_DIR = PROJECT_DIR / "outputs" / "cleaned_data"
+CSV_PATH = DATA_DIR / "delivery_analysis_cleaned.csv"
+GZIP_PATH = DATA_DIR / "delivery_analysis_cleaned.csv.gz"
+
+# Prefer the compressed file for Streamlit Cloud/GitHub deployments.
+# Fall back to the original CSV when the compressed file is not present.
+DATA_PATH = GZIP_PATH if GZIP_PATH.exists() else CSV_PATH
 
 COLUMN_ALIASES = {
     "performance": ["Delivery Performance", "delivery_performance"],
@@ -1009,8 +1015,11 @@ def main():
     inject_css()
 
     if not DATA_PATH.exists():
-        st.error(f"Cleaned dataset not found.\n\nExpected at:\n\n`{DATA_PATH}`\n\n"
-                 "Run your cleaning notebook to create it, or move the CSV to this location.")
+        st.error(
+            "Cleaned dataset not found. Upload either of these files to GitHub:\n\n"
+            f"- `{GZIP_PATH.relative_to(PROJECT_DIR)}` (recommended, compressed)\n"
+            f"- `{CSV_PATH.relative_to(PROJECT_DIR)}` (original CSV)"
+        )
         st.stop()
 
     try:
